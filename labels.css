@@ -1,0 +1,63 @@
+main {
+    background: grey;
+    
+  }
+  div {
+    display: flex;
+    background: lightgrey;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+  }
+  
+  #title {
+    width: auto;
+    height: 70px;
+    margin: 0 auto;
+    background-color: #aa98a5;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  p {
+    width: 400px;
+    height: 400px;
+    background-color: #aa98a5;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  form {
+    width: 250px;
+    height: 400px;
+    text-align: left;
+    padding: 10px;
+    background-color: #aa98a5;
+    border-radius: 10px;}
+  
+  #name {}
+  #email {}
+  #number {}
+  #dropdown {}
+  
+  #op1 {}
+  #op2 {}
+  #op3 {}
+  
+  #checkbox1 {}
+  #checkbox2 {}
+  #checkbox3 {}
+  
+  textarea {
+    width: 200px;
+    height: 100px;
+  }
+  textarea::placeholder {
+    font-size: 16px;
+    color: purple;
+  }
+  footer {
+    text-align: center;
+  
+  }
