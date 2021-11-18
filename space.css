@@ -1,0 +1,196 @@
+head {
+  
+}
+body { 
+  
+}
+h2 {
+  margin-left: 100px;
+  margin-top: 50px;
+  color: #FFFFFF;
+  position: fixed;
+  line-width: 5px;
+  line-height: 20px;
+  z-index: -6;
+}
+#space {
+  animation-name: space-text;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+#time {
+  opacity: 0;
+  animation-name: time-text;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+@keyframes space-text {
+  0% {
+    opacity: 1;
+  
+  }
+  25% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes time-text {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+    left: 50px;
+  }
+ 50% {
+   opacity: 1;
+   left: 8px;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#moon {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  margin-top: 5%;
+  margin-left: 75%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: transparent;
+  box-shadow: 15px 15px 0px white, 15px 15px 5px yellow;
+  animation-name: rainbow-glow;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes rainbow-glow {
+  0% {
+    box-shadow: 15px 15px 0px white, 15px 15px 5px yellow;
+  }
+  50% {
+    box-shadow: 15px 15px 0px pink, 15px 15px 5px purple;
+    opacity: 0.5;
+  }
+  100% {
+    box-shadow: 15px 15px 0px white, 15px 15px 5px yellow;
+    
+  }
+}
+.stars {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  top: 0px;
+  left: 0px;
+
+}
+.star-1 {
+  
+  margin-top: 2%;
+  margin-left: 25%;
+  animation-name: twinkle-1;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+}
+.star-2 {
+  margin-top: 5%;
+  margin-left: 5%;
+  animation-name: twinkle-2;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes twinkle-1 {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: yellow;
+    opacity: 0.5;
+  }
+  
+}
+@keyframes twinkle-2 {
+    0% {
+    background-color: white;
+  }
+  50% {
+    background-color: yellow;
+    transform: scale(1.3);
+  }
+}
+.back {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  z-index: -12;
+}
+
+.back1 {
+  background: linear-gradient(black, blue, purple, pink, cyan);
+}
+.back2 {
+  background: linear-gradient(45deg, black, blue, magenta);
+  opacity: 0.5;
+}
+.sparkle {
+    background-color: white;
+    position: fixed;
+    width: 2px;
+    height: 10px;
+    margin-left: 50%;
+    margin-top: 0%;
+    box-shadow: 0 0 10px white;
+  }
+.sparkle1 {
+  transform: rotate(0deg);
+  }
+.sparkle2 {
+    transform: rotate(90deg);
+  }
+.sparkle3{
+    transform: rotate(45deg);
+  }
+.sparkle4{
+    transform: rotate(-45deg);
+  }
+
+.clock {
+  background-color: white;
+    position: fixed;
+    width: 2px;
+    height: 100px;
+    margin-left: 50%;
+    margin-top: -45px;
+    animation-name: clock-anim;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes clock-anim {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
